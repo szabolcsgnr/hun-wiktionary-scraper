@@ -14,7 +14,7 @@ public class PageParserTest {
         PageParser pageParser = new PageParser();
         PageObject pageObject = pageParser.parse(html);
 
-        assertThat(pageObject.getNextPageUrl()).endsWith("https://hu.wiktionary.org/w/index.php?title=Kateg%C3%B3ria:magyar_hat%C3%A1roz%C3%B3sz%C3%B3k&pagefrom=b%C3%A1rmikorra#mw-pages");
+        assertThat(pageObject.getNextPageUrl()).endsWith("https://hu.wiktionary.org/w/index.php?title=Kateg%C3%B3ria:magyar_hat%C3%A1roz%C3%B3sz%C3%B3k&pagefrom=f%C3%A9lre#mw-pages");
         assertThat(pageObject.getWords()).hasSize(200);
     }
 }
